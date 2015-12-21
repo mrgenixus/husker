@@ -1,0 +1,6 @@
+{% extends "layouts/app.html" %}
+{% block title %} - Solutions - {{ solution.title }}{% endblock title %}
+{% block content %}
+  <h1>{{ solution.title }}</h1>
+  <p>{{ solution.body|linebreaks }}</p>
+{% endblock content %}

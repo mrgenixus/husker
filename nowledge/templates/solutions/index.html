@@ -1,0 +1,14 @@
+{% extends "layouts/app.html" %}
+{% block title %} - Solutions{% endblock title %}
+{% block content %}
+  {% for solution in solutions %}
+    <h2>
+      <a href="{% url 'solution' solution.id %}">
+        {{ solution.title }}
+      </a>
+    </h2>
+    <p>
+      {{ solution.abstract }}
+    </p>
+  {% endfor %}
+{% endblock content %}
